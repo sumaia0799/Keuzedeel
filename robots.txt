@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sumaia0799.github.io/Keuzedeel/sitemap.xml

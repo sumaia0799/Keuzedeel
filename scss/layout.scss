@@ -1,0 +1,46 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      color: blue;
+    }
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: $tablet) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
